@@ -32,7 +32,7 @@ export function ExitIntent() {
           </p>
           <div className="mt-6 flex justify-center">
             <CTAButton onClick={() => { setOpen(false); document.getElementById("reserve")?.scrollIntoView({ behavior: "smooth" }); }}>
-              Claim Free Spot
+              Claim My Spot — ₹50
             </CTAButton>
           </div>
         </div>
