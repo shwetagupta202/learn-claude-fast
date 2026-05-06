@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import { CTAButton } from "./CTAButton";
+import { useDynamicSocialProof } from "./ReserveButton";
 
 export function ExitIntent() {
   const [open, setOpen] = useState(false);
   const [shown, setShown] = useState(false);
+  const { joined, spotsLeft } = useDynamicSocialProof();
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -28,7 +30,10 @@ export function ExitIntent() {
           <span className="inline-block rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold text-primary">WAIT! Don't leave</span>
           <h3 className="mt-3 text-2xl font-bold">Grab your free seat before it's gone</h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            You're 1 click away from learning AI in 2 hours — at zero cost.
+            You're 1 click away from learning AI in 2 hours — at just ₹50.
+          </p>
+          <p className="mt-3 text-xs font-semibold text-destructive">
+            🔥 {joined}+ joined • Only {spotsLeft} seats left
           </p>
           <div className="mt-6 flex justify-center">
             <CTAButton onClick={() => { setOpen(false); document.getElementById("reserve")?.scrollIntoView({ behavior: "smooth" }); }}>

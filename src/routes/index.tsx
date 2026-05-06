@@ -5,7 +5,7 @@ import {
   PenTool, TrendingUp, ChevronDown, Check, Gift, Users,
 } from "lucide-react";
 import { CTAButton } from "@/components/landing/CTAButton";
-import { ReserveButton, StickyReserveBar } from "@/components/landing/ReserveButton";
+import { ReserveButton, StickyReserveBar, useDynamicSocialProof } from "@/components/landing/ReserveButton";
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
 import { SiteFooter } from "@/components/landing/SiteFooter";
@@ -40,6 +40,7 @@ function SectionTitle({ eyebrow, title, sub }: { eyebrow?: string; title: string
 
 function Landing() {
   const [scrolled, setScrolled] = useState(false);
+  const { joined, spotsLeft } = useDynamicSocialProof();
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 600);
     window.addEventListener("scroll", onScroll);
@@ -295,7 +296,8 @@ function Landing() {
           <span className="inline-block rounded-full bg-destructive/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-destructive">
             Hurry
           </span>
-          <h2 className="mt-4 text-3xl sm:text-5xl font-black">Only 50 seats left</h2>
+          <h2 className="mt-4 text-3xl sm:text-5xl font-black">Only {spotsLeft} seats left</h2>
+          <p className="mt-2 text-sm font-semibold text-muted-foreground">🔥 {joined}+ joined • {spotsLeft} of 50 seats remaining</p>
           <p className="mt-3 text-muted-foreground">Doors close when the timer hits zero.</p>
           <div className="mt-10"><Countdown /></div>
           <div className="mt-10 flex justify-center"><CTAButton>Reserve My Spot — ₹50</CTAButton></div>
