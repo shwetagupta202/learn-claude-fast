@@ -279,7 +279,7 @@ function Landing() {
           <h2 className="mt-4 text-3xl sm:text-5xl font-black">Only 50 seats left</h2>
           <p className="mt-3 text-muted-foreground">Doors close when the timer hits zero.</p>
           <div className="mt-10"><Countdown /></div>
-          <div className="mt-10 flex justify-center"><CTAButton>Reserve My Free Spot</CTAButton></div>
+          <div className="mt-10 flex justify-center"><CTAButton>Reserve My Spot — ₹50</CTAButton></div>
         </div>
       </section>
 
