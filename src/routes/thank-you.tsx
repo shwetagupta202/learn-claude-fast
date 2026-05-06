@@ -74,6 +74,7 @@ function ThankYou() {
           </div>
         </div>
       </div>
+      <SiteFooter />
     </div>
   );
 }
