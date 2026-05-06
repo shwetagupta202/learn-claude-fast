@@ -283,12 +283,12 @@ function Landing() {
         </div>
       </section>
 
-      {/* FORM */}
-      <section id="reserve" className="px-5 py-20 sm:py-24 bg-hero">
+      {/* SECONDARY FORM */}
+      <section className="px-5 py-20 sm:py-24 bg-hero">
         <div className="mx-auto max-w-md">
           <div className="text-center mb-8">
-            <h2 className="text-3xl sm:text-4xl font-black">Save your seat</h2>
-            <p className="mt-2 text-muted-foreground">Takes 20 seconds. No credit card.</p>
+            <h2 className="text-3xl sm:text-4xl font-black">Save your seat for ₹50</h2>
+            <p className="mt-2 text-muted-foreground">Takes 20 seconds. Instant confirmation.</p>
           </div>
           <MultiStepForm />
         </div>
