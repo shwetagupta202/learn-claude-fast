@@ -126,7 +126,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
       <button
         onClick={go}
         disabled={expired}
-        className="group flex w-full items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-4 font-bold text-white shadow-lg shadow-[#25D366]/30 animate-pulse-ring transition hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50"
+        className="group flex w-full items-center justify-center gap-2 rounded-full bg-[#c96f3f] px-6 py-4 font-bold text-white shadow-lg shadow-[#c96f3f]/30 animate-pulse-ring transition hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50"
       >
         Reserve My Spot — ₹50
         <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -147,9 +147,9 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
       {/* Price */}
       <div className="mt-2 flex items-baseline justify-center gap-2">
         <span className="text-base font-medium text-muted-foreground line-through">₹1999</span>
-        <span className="text-4xl font-black text-[#22c55e] drop-shadow-[0_0_20px_rgba(34,197,94,0.35)]">₹50</span>
+        <span className="text-4xl font-black text-[#c96f3f] drop-shadow-[0_0_20px_rgba(201,111,63,0.35)]">₹50</span>
       </div>
-      <div className="text-[10px] font-semibold text-[#22c55e]">SAVE 97% — TODAY ONLY</div>
+      <div className="text-[10px] font-semibold text-[#c96f3f]">SAVE 97% — TODAY ONLY</div>
 
       {/* Timer */}
       <div className="mt-3">
@@ -160,7 +160,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
       <button
         onClick={go}
         disabled={expired}
-        className="group mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-[#25D366] px-5 py-3.5 text-base font-bold text-white shadow-lg shadow-[#25D366]/40 animate-pulse-ring transition hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed"
+        className="group mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-[#c96f3f] px-5 py-3.5 text-base font-bold text-white shadow-lg shadow-[#c96f3f]/40 animate-pulse-ring transition hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50 disabled:cursor-not-allowed"
       >
         Reserve My Spot — ₹50
         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -180,7 +180,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
           <span className="text-destructive">Only {spotsLeft} spots left</span>
         </div>
         <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-background">
-          <div className="h-full bg-gradient-to-r from-[#22c55e] to-orange-500 transition-all" style={{ width: `${pct}%` }} />
+          <div className="h-full bg-gradient-to-r from-[#c96f3f] to-orange-500 transition-all" style={{ width: `${pct}%` }} />
         </div>
       </div>
     </div>
@@ -205,12 +205,12 @@ export function StickyReserveBar() {
         )}
         <div className="hidden sm:flex flex-col leading-tight">
           <span className="text-[11px] text-muted-foreground line-through">₹1999</span>
-          <span className="text-base font-black text-[#22c55e]">₹50 only</span>
+          <span className="text-base font-black text-[#c96f3f]">₹50 only</span>
         </div>
         <button
           onClick={go}
           disabled={expired}
-          className="ml-auto flex items-center justify-center gap-1.5 rounded-full bg-[#25D366] px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-bold text-white shadow-lg shadow-[#25D366]/30 transition hover:scale-[1.02] active:scale-95 disabled:opacity-50"
+          className="ml-auto flex items-center justify-center gap-1.5 rounded-full bg-[#c96f3f] px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-bold text-white shadow-lg shadow-[#c96f3f]/30 transition hover:scale-[1.02] active:scale-95 disabled:opacity-50"
         >
           Reserve My Spot — ₹50
           <ArrowRight className="h-4 w-4" />
