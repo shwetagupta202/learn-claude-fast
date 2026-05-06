@@ -26,7 +26,8 @@ function ThankYou() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-hero text-foreground flex items-center justify-center px-5 py-16">
+    <div className="min-h-screen bg-hero text-foreground">
+      <div className="flex items-center justify-center px-5 py-16 relative">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div className="relative w-full max-w-2xl">
         <div className="rounded-3xl border border-border bg-card p-8 sm:p-12 shadow-2xl text-center">
