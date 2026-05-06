@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { CheckCircle2, MessageCircle, Sparkles, ShieldCheck } from "lucide-react";
+import { SiteFooter } from "@/components/landing/SiteFooter";
 
 const WHATSAPP_URL = "https://chat.whatsapp.com/GIwpt5p7sa574HbXleVRi2";
 
