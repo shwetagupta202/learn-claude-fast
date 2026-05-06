@@ -113,9 +113,27 @@ function Landing() {
                 taught live by industry experts.
               </p>
 
+              {/* Coach card */}
+              <div className="mt-7 flex items-center gap-4 rounded-2xl border border-primary/30 bg-card/80 backdrop-blur p-3 sm:p-4 shadow-lg max-w-md mx-auto lg:mx-0">
+                <img
+                  src={coachImg}
+                  alt="Coach Shweta Gupta — Best AI Agent Female Coach in India"
+                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover ring-2 ring-primary/40"
+                  loading="eager"
+                />
+                <div className="text-left">
+                  <div className="text-xs uppercase tracking-wider text-muted-foreground">Taught Live by</div>
+                  <div className="font-bold text-base sm:text-lg">Coach Shweta Gupta</div>
+                  <div className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] sm:text-xs font-semibold text-primary">
+                    <Star className="h-3 w-3 fill-current" />
+                    Google Ranked · Best AI Agent Female Coach in India
+                  </div>
+                </div>
+              </div>
+
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {[
-                  { icon: Users, t: "2,00,000+", d: "Learners trained" },
+                  { icon: Users, t: "2,000+", d: "Learners trained" },
                   { icon: Star, t: "4.8 / 5", d: "Avg. rating" },
                   { icon: Rocket, t: "No coding", d: "Required at all" },
                 ].map((b) => (
