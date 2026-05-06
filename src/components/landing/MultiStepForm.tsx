@@ -88,7 +88,7 @@ export function MultiStepForm() {
           onClick={next}
           className="group flex w-full items-center justify-center gap-2 rounded-xl bg-accent-gradient px-6 py-4 font-bold text-primary-foreground btn-glow transition hover:scale-[1.01] active:scale-[0.99]"
         >
-          {step === 1 ? "Continue" : "Reserve My Free Spot"}
+          {step === 1 ? "Continue" : "Reserve My Spot — ₹50"}
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </button>
 
