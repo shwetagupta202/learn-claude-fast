@@ -103,7 +103,7 @@ function Landing() {
               </span>
               <h1 className="mt-5 font-serif text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05]">
                 Learn AI Like a Pro in Just{" "}
-                <span className="text-accent-glow">3 Hours</span>
+                <span className="text-accent-glow">2 Hours</span>
               </h1>
               <p className="mt-3 text-xl sm:text-2xl font-semibold text-foreground/80">
                 For just <span className="text-primary">₹50</span> — even if you're a complete beginner.
