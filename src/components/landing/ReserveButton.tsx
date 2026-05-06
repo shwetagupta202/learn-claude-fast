@@ -41,6 +41,50 @@ export function useOfferCountdown() {
   return { remaining, expired: end !== null && remaining <= 0 };
 }
 
+const SOCIAL_KEY = "reserve_social_proof";
+const SPOTS_TOTAL = 50;
+
+export function useDynamicSocialProof() {
+  const [state, setState] = useState({ joined: 237, spotsLeft: 12, spotsTotal: SPOTS_TOTAL });
+
+  useEffect(() => {
+    const load = () => {
+      const saved = sessionStorage.getItem(SOCIAL_KEY);
+      if (saved) {
+        try {
+          const p = JSON.parse(saved);
+          if (typeof p.joined === "number" && typeof p.spotsLeft === "number") return p;
+        } catch {}
+      }
+      // Seed: vary slightly each session for realism
+      const joined = 237 + Math.floor(Math.random() * 24);
+      const spotsLeft = 8 + Math.floor(Math.random() * 7); // 8–14
+      const seed = { joined, spotsLeft, spotsTotal: SPOTS_TOTAL };
+      sessionStorage.setItem(SOCIAL_KEY, JSON.stringify(seed));
+      return seed;
+    };
+    setState(load());
+
+    // Slowly increment joined / decrement spots over time
+    const interval = setInterval(() => {
+      setState((prev) => {
+        const bumpJoined = Math.random() < 0.6 ? 1 : 0;
+        const dropSpot = Math.random() < 0.18 && prev.spotsLeft > 3 ? 1 : 0;
+        const next = {
+          joined: prev.joined + bumpJoined,
+          spotsLeft: Math.max(3, prev.spotsLeft - dropSpot),
+          spotsTotal: SPOTS_TOTAL,
+        };
+        sessionStorage.setItem(SOCIAL_KEY, JSON.stringify(next));
+        return next;
+      });
+    }, 12000);
+    return () => clearInterval(interval);
+  }, []);
+
+  return state;
+}
+
 function go() {
   try {
     // @ts-expect-error meta pixel
