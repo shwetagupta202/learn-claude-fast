@@ -222,7 +222,7 @@ function Landing() {
       {/* VALUE STACK */}
       <section className="px-5 py-20 sm:py-24">
         <div className="mx-auto max-w-3xl">
-          <SectionTitle eyebrow="The Offer" title="Here's everything you get — FREE" />
+          <SectionTitle eyebrow="The Offer" title="Here's everything you get — for just ₹50" />
           <div className="mt-12 rounded-3xl border-2 border-primary/40 bg-card p-6 sm:p-10 shadow-2xl">
             <ul className="space-y-4">
               {stack.map((s) => (
