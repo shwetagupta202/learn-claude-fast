@@ -126,10 +126,12 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
       <button
         onClick={go}
         disabled={expired}
-        className="group flex w-full items-center justify-center gap-2 rounded-full bg-[#c96f3f] px-6 py-4 font-bold text-white shadow-lg shadow-[#c96f3f]/30 animate-pulse-ring transition hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50"
+        className="btn-3d group flex w-full items-center justify-center gap-2 rounded-full px-6 py-4 font-extrabold disabled:opacity-50"
       >
-        Reserve My Spot — ₹50
-        <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+        <span className="inline-flex items-center gap-2">
+          Reserve My Spot — ₹50
+          <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+        </span>
       </button>
     );
   }
