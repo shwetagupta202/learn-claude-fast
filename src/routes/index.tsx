@@ -241,10 +241,10 @@ function Landing() {
             </div>
             <div className="mt-3 flex items-center justify-between rounded-2xl bg-accent-gradient px-5 py-5 text-primary-foreground">
               <span className="text-lg font-black">Today's Price</span>
-              <span className="text-3xl font-black">FREE</span>
+              <span className="text-3xl font-black">₹50 only</span>
             </div>
             <div className="mt-8 flex justify-center">
-              <CTAButton>Claim My Free Seat</CTAButton>
+              <CTAButton>Claim My Seat for ₹50</CTAButton>
             </div>
           </div>
         </div>
