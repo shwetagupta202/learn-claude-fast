@@ -350,9 +350,7 @@ function Landing() {
         </div>
       </section>
 
-      <footer className="border-t border-border px-5 py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Claude 101 Workshop. All rights reserved.
-      </footer>
+      <SiteFooter />
 
       {/* Sticky CTA (mobile) */}
       {scrolled && (
