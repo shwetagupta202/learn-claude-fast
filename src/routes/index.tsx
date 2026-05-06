@@ -90,50 +90,50 @@ function Landing() {
     <div className="min-h-screen bg-background text-foreground">
       <ExitIntent />
 
-      {/* HERO */}
+      {/* HERO with embedded lead form */}
       <header className="relative overflow-hidden bg-hero">
-        <div className="absolute inset-0 grid-bg opacity-40" />
-        <div className="absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
-        <div className="relative mx-auto max-w-6xl px-5 pt-16 pb-20 sm:pt-24 sm:pb-28">
-          <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs sm:text-sm font-medium text-primary">
-              <Sparkles className="h-3.5 w-3.5" /> Claude 101 — Free Live Workshop
-            </span>
-            <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05]">
-              Learn How to Use AI Like a Pro in Just{" "}
-              <span className="text-accent-glow">3 Hours</span>
-              <span className="block text-2xl sm:text-3xl md:text-4xl font-bold mt-3 text-muted-foreground">
-                (Even if you're a complete beginner)
+        <div className="absolute inset-0 grid-bg opacity-60" />
+        <div className="absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary/15 blur-3xl" />
+        <div className="relative mx-auto max-w-6xl px-5 pt-10 pb-14 sm:pt-16 sm:pb-20">
+          <div id="reserve" className="grid gap-10 lg:grid-cols-2 lg:gap-14 items-center">
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs sm:text-sm font-medium text-primary">
+                <Sparkles className="h-3.5 w-3.5" /> Claude 101 — Live Workshop
               </span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground">
-              Build real workflows for marketing, automation & productivity using Claude AI —
-              taught live by industry experts.
-            </p>
+              <h1 className="mt-5 font-serif text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05]">
+                Learn AI Like a Pro in Just{" "}
+                <span className="text-accent-glow">3 Hours</span>
+              </h1>
+              <p className="mt-3 text-xl sm:text-2xl font-semibold text-foreground/80">
+                For just <span className="text-primary">₹50</span> — even if you're a complete beginner.
+              </p>
+              <p className="mx-auto lg:mx-0 mt-5 max-w-xl text-base sm:text-lg text-muted-foreground">
+                Build real workflows for marketing, automation & productivity using Claude AI —
+                taught live by industry experts.
+              </p>
 
-            <div className="mt-8 flex justify-center">
-              <CTAButton>Get Free Access Now</CTAButton>
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {[
+                  { icon: Users, t: "2,00,000+", d: "Learners trained" },
+                  { icon: Star, t: "4.8 / 5", d: "Avg. rating" },
+                  { icon: Rocket, t: "No coding", d: "Required at all" },
+                ].map((b) => (
+                  <div key={b.t} className="rounded-2xl bg-card/80 backdrop-blur border border-border px-4 py-3 flex items-center gap-3 justify-center lg:justify-start">
+                    <b.icon className="h-5 w-5 text-primary" />
+                    <div className="text-left">
+                      <div className="font-bold text-sm">{b.t}</div>
+                      <div className="text-xs text-muted-foreground">{b.d}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <p className="mt-4 inline-flex items-center gap-2 text-sm text-primary font-medium">
-              <Clock className="h-4 w-4" /> Limited seats — Batch closing soon
-            </p>
-
-            {/* Trust badges */}
-            <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-              {[
-                { icon: Users, t: "2,00,000+", d: "Learners trained" },
-                { icon: Star, t: "4.8 / 5", d: "Avg. rating" },
-                { icon: Rocket, t: "No coding", d: "Required at all" },
-              ].map((b) => (
-                <div key={b.t} className="rounded-2xl bg-card/60 backdrop-blur border border-border px-5 py-4 flex items-center gap-3 justify-center">
-                  <b.icon className="h-5 w-5 text-primary" />
-                  <div className="text-left">
-                    <div className="font-bold">{b.t}</div>
-                    <div className="text-xs text-muted-foreground">{b.d}</div>
-                  </div>
-                </div>
-              ))}
+            <div className="lg:sticky lg:top-6">
+              <MultiStepForm />
+              <p className="mt-3 text-center text-sm text-primary font-medium inline-flex items-center gap-2 w-full justify-center">
+                <Clock className="h-4 w-4" /> Limited seats — Batch closing soon
+              </p>
             </div>
           </div>
         </div>
