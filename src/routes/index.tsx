@@ -153,11 +153,6 @@ function Landing() {
                   </div>
                 ))}
               </div>
-            </div>
-
-            <div className="lg:sticky lg:top-6">
-              <ReserveButton />
-            </div>
           </div>
         </div>
       </header>
