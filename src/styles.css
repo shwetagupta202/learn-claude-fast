@@ -105,4 +105,67 @@
     50% { box-shadow: 0 0 24px 6px color-mix(in oklab, var(--primary) 25%, transparent); }
   }
   .animate-pulse-ring { animation: pulse-ring 2.4s ease-in-out infinite; }
+
+  /* 3D CTA Button — layered depth + shimmer + bobbing */
+  @keyframes cta-bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+  }
+  @keyframes cta-shimmer {
+    0% { transform: translateX(-150%) skewX(-20deg); }
+    60%, 100% { transform: translateX(250%) skewX(-20deg); }
+  }
+  @keyframes cta-glow {
+    0%, 100% { box-shadow: 0 10px 0 0 #8a3d1f, 0 14px 30px -6px rgba(201,111,63,0.55), 0 0 0 0 rgba(201,111,63,0.5); }
+    50% { box-shadow: 0 10px 0 0 #8a3d1f, 0 18px 36px -4px rgba(201,111,63,0.7), 0 0 28px 4px rgba(201,111,63,0.35); }
+  }
+
+  .btn-3d {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: linear-gradient(180deg, #e08a5e 0%, #c96f3f 50%, #a8542a 100%);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.18);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.25);
+    animation: cta-glow 2.6s ease-in-out infinite, cta-bob 3.2s ease-in-out infinite;
+    transform: translateZ(0);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.2s ease;
+  }
+  .btn-3d::before {
+    content: "";
+    position: absolute;
+    inset: 1px 1px auto 1px;
+    height: 45%;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0));
+    pointer-events: none;
+    z-index: 1;
+  }
+  .btn-3d::after {
+    content: "";
+    position: absolute;
+    top: 0; bottom: 0; left: 0;
+    width: 40%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent);
+    animation: cta-shimmer 2.8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 2;
+    mix-blend-mode: overlay;
+  }
+  .btn-3d > * { position: relative; z-index: 3; }
+  .btn-3d:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+  }
+  .btn-3d:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 0 0 #8a3d1f, 0 4px 10px -2px rgba(201,111,63,0.5);
+    animation-play-state: paused;
+  }
+  .btn-3d:disabled {
+    animation: none;
+    filter: grayscale(0.4);
+  }
 }
