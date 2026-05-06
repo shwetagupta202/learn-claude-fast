@@ -14,9 +14,9 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "Claude 101 Workshop — Learn AI Like a Pro in 3 Hours (₹50 Only)" },
-      { name: "description", content: "3-hour live workshop on Claude AI for marketers, founders & beginners. Build real workflows, automate work, save 10+ hours/week. Just ₹50." },
-      { property: "og:title", content: "Claude 101 Workshop — Learn AI Like a Pro in 3 Hours" },
+      { title: "Claude 101 Workshop — Learn AI Like a Pro in 2 Hours (₹50 Only)" },
+      { name: "description", content: "2-hour live workshop on Claude AI for marketers, founders & beginners. Build real workflows, automate work, save 10+ hours/week. Just ₹50." },
+      { property: "og:title", content: "Claude 101 Workshop — Learn AI Like a Pro in 2 Hours" },
       { property: "og:description", content: "Build real AI workflows for marketing, automation & productivity. Just ₹50 — limited seats." },
       { property: "og:type", content: "website" },
     ],
@@ -72,7 +72,7 @@ function Landing() {
   ];
 
   const stack = [
-    { t: "3-Hour Live Workshop", v: "₹1,999" },
+    { t: "2-Hour Live Workshop", v: "₹1,999" },
     { t: "Templates Pack (50+)", v: "₹999" },
     { t: "Prompt Library (200+)", v: "₹1,499" },
     { t: "Bonus Tools & Resources", v: "₹999" },
@@ -178,7 +178,7 @@ function Landing() {
       {/* SOLUTION */}
       <section className="px-5 py-20 sm:py-24 bg-card/40">
         <div className="mx-auto max-w-6xl">
-          <SectionTitle eyebrow="The Outcome" title="What You'll Achieve in 3 Hours" />
+          <SectionTitle eyebrow="The Outcome" title="What You'll Achieve in 2 Hours" />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {solutions.map((s) => (
               <div key={s.t} className="rounded-2xl border border-border bg-card p-6 hover:-translate-y-1 transition">
@@ -339,7 +339,7 @@ function Landing() {
             Start Using AI Like the <span className="text-accent-glow">Top 1%</span> of Professionals
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">
-            One workshop. 3 hours. A skill that pays you back forever.
+            One workshop. 2 hours. A skill that pays you back forever.
           </p>
           <div className="mt-10 flex justify-center">
             <CTAButton>Join Workshop for ₹50</CTAButton>
