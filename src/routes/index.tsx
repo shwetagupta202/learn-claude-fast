@@ -5,7 +5,7 @@ import {
   PenTool, TrendingUp, ChevronDown, Check, Gift, Users,
 } from "lucide-react";
 import { CTAButton } from "@/components/landing/CTAButton";
-import { ReserveButton, StickyReserveBar } from "@/components/landing/ReserveButton";
+import { ReserveButton, StickyReserveBar, useDynamicSocialProof } from "@/components/landing/ReserveButton";
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
 import { SiteFooter } from "@/components/landing/SiteFooter";
@@ -40,6 +40,7 @@ function SectionTitle({ eyebrow, title, sub }: { eyebrow?: string; title: string
 
 function Landing() {
   const [scrolled, setScrolled] = useState(false);
+  const { joined, spotsLeft } = useDynamicSocialProof();
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 600);
     window.addEventListener("scroll", onScroll);
