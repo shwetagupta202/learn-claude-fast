@@ -8,6 +8,7 @@ import { CTAButton } from "@/components/landing/CTAButton";
 import { ReserveButton } from "@/components/landing/ReserveButton";
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
+import { SiteFooter } from "@/components/landing/SiteFooter";
 import coachImg from "@/assets/coach-shweta.jpeg";
 
 export const Route = createFileRoute("/")({
@@ -350,9 +351,7 @@ function Landing() {
         </div>
       </section>
 
-      <footer className="border-t border-border px-5 py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Claude 101 Workshop. All rights reserved.
-      </footer>
+      <SiteFooter />
 
       {/* Sticky CTA (mobile) */}
       {scrolled && (

@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { CheckCircle2, MessageCircle, Sparkles, ShieldCheck } from "lucide-react";
+import { SiteFooter } from "@/components/landing/SiteFooter";
 
 const WHATSAPP_URL = "https://chat.whatsapp.com/GIwpt5p7sa574HbXleVRi2";
 
@@ -26,7 +27,8 @@ function ThankYou() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-hero text-foreground flex items-center justify-center px-5 py-16">
+    <div className="min-h-screen bg-hero text-foreground">
+      <div className="flex items-center justify-center px-5 py-16 relative">
       <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
       <div className="relative w-full max-w-2xl">
         <div className="rounded-3xl border border-border bg-card p-8 sm:p-12 shadow-2xl text-center">
@@ -73,6 +75,8 @@ function ThankYou() {
           </div>
         </div>
       </div>
+      </div>
+      <SiteFooter />
     </div>
   );
 }
