@@ -5,7 +5,7 @@ import {
   PenTool, TrendingUp, ChevronDown, Check, Gift, Users,
 } from "lucide-react";
 import { CTAButton } from "@/components/landing/CTAButton";
-import { MultiStepForm } from "@/components/landing/MultiStepForm";
+import { ReserveButton } from "@/components/landing/ReserveButton";
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
 import coachImg from "@/assets/coach-shweta.jpeg";
@@ -151,10 +151,7 @@ function Landing() {
             </div>
 
             <div className="lg:sticky lg:top-6">
-              <MultiStepForm />
-              <p className="mt-3 text-center text-sm text-primary font-medium inline-flex items-center gap-2 w-full justify-center">
-                <Clock className="h-4 w-4" /> Limited seats — Batch closing soon
-              </p>
+              <ReserveButton />
             </div>
           </div>
         </div>
@@ -311,7 +308,7 @@ function Landing() {
             <h2 className="text-3xl sm:text-4xl font-black">Save your seat for ₹50</h2>
             <p className="mt-2 text-muted-foreground">Takes 20 seconds. Instant confirmation.</p>
           </div>
-          <MultiStepForm />
+          <ReserveButton />
         </div>
       </section>
 
