@@ -90,8 +90,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
     );
   }
 
-  const spotsLeft = 12;
-  const spotsTotal = 50;
+  const { joined, spotsLeft, spotsTotal } = useDynamicSocialProof();
   const pct = Math.round(((spotsTotal - spotsLeft) / spotsTotal) * 100);
 
   return (
