@@ -105,11 +105,11 @@ function TimerDisplay({ remaining, expired }: { remaining: number; expired: bool
     );
   }
   return (
-    <div className="rounded-xl border border-orange-500/40 bg-orange-500/10 px-4 py-3 text-center">
-      <div className="text-[11px] font-semibold uppercase tracking-wider text-orange-500">
+    <div className="rounded-lg border border-orange-500/40 bg-orange-500/10 px-3 py-2 text-center">
+      <div className="text-[10px] font-semibold uppercase tracking-wider text-orange-500">
         ⏳ Offer Ends In
       </div>
-      <div className="mt-1 flex items-center justify-center gap-1.5 font-mono text-2xl font-black text-orange-500 tabular-nums">
+      <div className="mt-0.5 flex items-center justify-center gap-1 font-mono text-xl font-black text-orange-500 tabular-nums">
         <span>{h}</span><span className="opacity-60">:</span>
         <span>{m}</span><span className="opacity-60">:</span>
         <span>{s}</span>
