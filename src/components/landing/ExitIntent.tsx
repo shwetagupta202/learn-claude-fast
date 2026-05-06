@@ -28,7 +28,7 @@ export function ExitIntent() {
           <span className="inline-block rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold text-primary">WAIT! Don't leave</span>
           <h3 className="mt-3 text-2xl font-bold">Grab your free seat before it's gone</h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            You're 1 click away from learning AI in 3 hours — at zero cost.
+            You're 1 click away from learning AI in 2 hours — at zero cost.
           </p>
           <div className="mt-6 flex justify-center">
             <CTAButton onClick={() => { setOpen(false); document.getElementById("reserve")?.scrollIntoView({ behavior: "smooth" }); }}>
