@@ -153,6 +153,7 @@ function Landing() {
                   </div>
                 ))}
               </div>
+            </div>
           </div>
         </div>
       </header>
