@@ -8,6 +8,7 @@ import { CTAButton } from "@/components/landing/CTAButton";
 import { MultiStepForm } from "@/components/landing/MultiStepForm";
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
+import coachImg from "@/assets/coach-shweta.jpeg";
 
 export const Route = createFileRoute("/")({
   component: Landing,
