@@ -98,9 +98,9 @@ function Landing() {
         <div className="absolute inset-0 grid-bg opacity-40" />
         <div className="absolute -top-40 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full ai-orb" />
         <div className="absolute top-1/3 -right-20 h-[300px] w-[300px] rounded-full bg-primary/15 blur-3xl" />
-        <div className="relative mx-auto max-w-6xl px-5 pt-10 pb-14 sm:pt-16 sm:pb-20">
-          <div id="reserve" className="grid gap-8 lg:gap-14 lg:grid-cols-2 items-center">
-            {/* Reserve card — first on mobile, right column on desktop */}
+        <div className="relative mx-auto max-w-6xl px-5 pt-8 pb-10 sm:pt-14 sm:pb-16">
+          <div id="reserve" className="grid gap-6 lg:gap-12 lg:grid-cols-2 items-start">
+            {/* Reserve card — first on mobile (above the fold), right column on desktop */}
             <div className="order-1 lg:order-2 lg:sticky lg:top-6">
               <ReserveButton />
             </div>
