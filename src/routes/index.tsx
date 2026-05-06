@@ -93,8 +93,10 @@ function Landing() {
 
       {/* HERO with embedded lead form */}
       <header className="relative overflow-hidden bg-hero">
-        <div className="absolute inset-0 grid-bg opacity-60" />
-        <div className="absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary/15 blur-3xl" />
+        <div className="absolute inset-0 ai-network opacity-70" />
+        <div className="absolute inset-0 grid-bg opacity-40" />
+        <div className="absolute -top-40 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full ai-orb" />
+        <div className="absolute top-1/3 -right-20 h-[300px] w-[300px] rounded-full bg-primary/15 blur-3xl" />
         <div className="relative mx-auto max-w-6xl px-5 pt-10 pb-14 sm:pt-16 sm:pb-20">
           <div id="reserve" className="grid gap-10 lg:grid-cols-2 lg:gap-14 items-center">
             <div className="text-center lg:text-left">
