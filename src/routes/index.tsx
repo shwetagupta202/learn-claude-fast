@@ -215,7 +215,7 @@ function Landing() {
       {/* SOCIAL PROOF */}
       <section className="px-5 py-20 sm:py-24 bg-card/40">
         <div className="mx-auto max-w-6xl">
-          <SectionTitle eyebrow="Loved by 2,00,000+" title="Real results from real learners" />
+          <SectionTitle eyebrow="Loved by 2,000+" title="Real results from real learners" />
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {testimonials.map((t) => (
               <div key={t.n} className="rounded-2xl border border-border bg-card p-7 shadow-lg">
