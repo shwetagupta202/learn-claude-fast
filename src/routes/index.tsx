@@ -13,10 +13,10 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "Claude 101 Workshop — Learn AI Like a Pro in 3 Hours (Free)" },
-      { name: "description", content: "Free 3-hour live workshop on Claude AI for marketers, founders & beginners. Build real workflows, automate work, save 10+ hours/week. No coding required." },
+      { title: "Claude 101 Workshop — Learn AI Like a Pro in 3 Hours (₹50 Only)" },
+      { name: "description", content: "3-hour live workshop on Claude AI for marketers, founders & beginners. Build real workflows, automate work, save 10+ hours/week. Just ₹50." },
       { property: "og:title", content: "Claude 101 Workshop — Learn AI Like a Pro in 3 Hours" },
-      { property: "og:description", content: "Build real AI workflows for marketing, automation & productivity. Limited free seats." },
+      { property: "og:description", content: "Build real AI workflows for marketing, automation & productivity. Just ₹50 — limited seats." },
       { property: "og:type", content: "website" },
     ],
   }),
