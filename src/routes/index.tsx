@@ -8,6 +8,7 @@ import { CTAButton } from "@/components/landing/CTAButton";
 import { ReserveButton } from "@/components/landing/ReserveButton";
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
+import { SiteFooter } from "@/components/landing/SiteFooter";
 import coachImg from "@/assets/coach-shweta.jpeg";
 
 export const Route = createFileRoute("/")({
