@@ -45,7 +45,7 @@ const SOCIAL_KEY = "reserve_social_proof";
 const SPOTS_TOTAL = 50;
 
 export function useDynamicSocialProof() {
-  const [state, setState] = useState({ joined: 237, spotsLeft: 12, spotsTotal: SPOTS_TOTAL });
+  const [state, setState] = useState({ joined: 289, spotsLeft: 12, spotsTotal: SPOTS_TOTAL });
 
   useEffect(() => {
     const load = () => {
@@ -57,7 +57,7 @@ export function useDynamicSocialProof() {
         } catch {}
       }
       // Seed: vary slightly each session for realism
-      const joined = 237 + Math.floor(Math.random() * 24);
+      const joined = 289 + Math.floor(Math.random() * 24);
       const spotsLeft = 8 + Math.floor(Math.random() * 7); // 8–14
       const seed = { joined, spotsLeft, spotsTotal: SPOTS_TOTAL };
       sessionStorage.setItem(SOCIAL_KEY, JSON.stringify(seed));
@@ -177,7 +177,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
       <div className="mt-3 rounded-lg bg-secondary/60 p-2.5">
         <div className="flex items-center justify-between text-[10px] sm:text-xs font-semibold gap-2">
           <span className="flex items-center gap-1 text-foreground"><Flame className="h-3 w-3 text-orange-500" /> {joined.toLocaleString("en-IN")}+ joined</span>
-          <span className="text-destructive">Only {spotsLeft} spots left</span>
+          <span className="text-destructive">Only {spotsLeft} seats left</span>
         </div>
         <div className="mt-1.5 h-1.5 w-full overflow-hidden rounded-full bg-background">
           <div className="h-full bg-gradient-to-r from-[#c96f3f] to-orange-500 transition-all" style={{ width: `${pct}%` }} />
