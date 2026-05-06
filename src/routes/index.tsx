@@ -5,7 +5,7 @@ import {
   PenTool, TrendingUp, ChevronDown, Check, Gift, Users,
 } from "lucide-react";
 import { CTAButton } from "@/components/landing/CTAButton";
-import { ReserveButton } from "@/components/landing/ReserveButton";
+import { ReserveButton, StickyReserveBar } from "@/components/landing/ReserveButton";
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
 import { SiteFooter } from "@/components/landing/SiteFooter";
@@ -353,12 +353,8 @@ function Landing() {
 
       <SiteFooter />
 
-      {/* Sticky CTA (mobile) */}
-      {scrolled && (
-        <div className="fixed bottom-0 inset-x-0 z-40 border-t border-border bg-background/95 backdrop-blur p-3 sm:hidden">
-          <CTAButton className="w-full">Reserve Seat — ₹50</CTAButton>
-        </div>
-      )}
+      {/* Sticky CTA + timer */}
+      {scrolled && <StickyReserveBar />}
     </div>
   );
 }
