@@ -1,6 +1,7 @@
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -31,33 +32,34 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  --shadow-glow: 0 0 40px color-mix(in oklab, var(--primary) 45%, transparent);
+  --font-serif: 'Fraunces', ui-serif, Georgia, serif;
+  --shadow-glow: 0 0 40px color-mix(in oklab, var(--primary) 35%, transparent);
 }
 
 :root {
   --radius: 0.75rem;
-  /* Dark AI theme — navy bg, neon lime accent */
-  --background: oklch(0.13 0.02 260);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.18 0.02 260);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.18 0.02 260);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.92 0.21 130); /* neon lime */
-  --primary-foreground: oklch(0.13 0.02 260);
-  --secondary: oklch(0.22 0.02 260);
-  --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.22 0.02 260);
-  --muted-foreground: oklch(0.72 0.02 260);
-  --accent: oklch(0.92 0.21 130);
-  --accent-foreground: oklch(0.13 0.02 260);
-  --destructive: oklch(0.65 0.22 25);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 10%);
-  --ring: oklch(0.92 0.21 130);
-  --gradient-hero: radial-gradient(ellipse at top, oklch(0.22 0.05 260) 0%, oklch(0.13 0.02 260) 60%);
-  --gradient-accent: linear-gradient(135deg, oklch(0.92 0.21 130), oklch(0.85 0.22 145));
+  /* Claude AI inspired — warm cream + signature Claude orange */
+  --background: oklch(0.97 0.012 80);   /* warm cream */
+  --foreground: oklch(0.22 0.02 50);     /* warm near-black */
+  --card: oklch(0.99 0.008 80);
+  --card-foreground: oklch(0.22 0.02 50);
+  --popover: oklch(0.99 0.008 80);
+  --popover-foreground: oklch(0.22 0.02 50);
+  --primary: oklch(0.66 0.16 40);        /* Claude signature orange */
+  --primary-foreground: oklch(0.99 0.005 80);
+  --secondary: oklch(0.93 0.015 70);
+  --secondary-foreground: oklch(0.22 0.02 50);
+  --muted: oklch(0.94 0.012 70);
+  --muted-foreground: oklch(0.45 0.02 50);
+  --accent: oklch(0.66 0.16 40);
+  --accent-foreground: oklch(0.99 0.005 80);
+  --destructive: oklch(0.58 0.22 25);
+  --destructive-foreground: oklch(0.99 0.005 80);
+  --border: oklch(0.22 0.02 50 / 10%);
+  --input: oklch(0.22 0.02 50 / 12%);
+  --ring: oklch(0.66 0.16 40);
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.95 0.025 70) 0%, oklch(0.97 0.012 80) 60%);
+  --gradient-accent: linear-gradient(135deg, oklch(0.68 0.17 38), oklch(0.62 0.18 30));
 }
 
 .dark { color-scheme: dark; }
@@ -71,22 +73,24 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
+  h1, h2, h3 { font-family: var(--font-serif); letter-spacing: -0.02em; }
 }
 
 @layer utilities {
+  .font-serif { font-family: var(--font-serif); }
   .bg-hero { background: var(--gradient-hero); }
   .bg-accent-gradient { background: var(--gradient-accent); }
-  .text-accent-glow { color: var(--primary); text-shadow: 0 0 30px color-mix(in oklab, var(--primary) 60%, transparent); }
-  .btn-glow { box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 50%, transparent), 0 10px 40px -10px color-mix(in oklab, var(--primary) 60%, transparent); }
+  .text-accent-glow { color: var(--primary); }
+  .btn-glow { box-shadow: 0 8px 24px -8px color-mix(in oklab, var(--primary) 55%, transparent); }
   .grid-bg {
     background-image:
-      linear-gradient(oklch(1 0 0 / 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, oklch(1 0 0 / 0.04) 1px, transparent 1px);
+      linear-gradient(oklch(0.22 0.02 50 / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(0.22 0.02 50 / 0.05) 1px, transparent 1px);
     background-size: 48px 48px;
   }
   @keyframes pulse-ring {
-    0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 50%, transparent); }
-    50% { box-shadow: 0 0 30px 6px color-mix(in oklab, var(--primary) 35%, transparent); }
+    0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 40%, transparent); }
+    50% { box-shadow: 0 0 24px 6px color-mix(in oklab, var(--primary) 25%, transparent); }
   }
   .animate-pulse-ring { animation: pulse-ring 2.4s ease-in-out infinite; }
 }
