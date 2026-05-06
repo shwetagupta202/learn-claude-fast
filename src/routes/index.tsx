@@ -339,7 +339,7 @@ function Landing() {
       {/* Sticky CTA (mobile) */}
       {scrolled && (
         <div className="fixed bottom-0 inset-x-0 z-40 border-t border-border bg-background/95 backdrop-blur p-3 sm:hidden">
-          <CTAButton className="w-full">Reserve Free Seat</CTAButton>
+          <CTAButton className="w-full">Reserve Seat — ₹50</CTAButton>
         </div>
       )}
     </div>
