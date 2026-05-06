@@ -176,7 +176,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
       {/* Social proof + progress */}
       <div className="mt-5 rounded-xl bg-secondary/60 p-3">
         <div className="flex items-center justify-between text-xs font-semibold">
-          <span className="flex items-center gap-1.5 text-foreground"><Flame className="h-3.5 w-3.5 text-orange-500" /> 237+ people already joined</span>
+          <span className="flex items-center gap-1.5 text-foreground"><Flame className="h-3.5 w-3.5 text-orange-500" /> {joined.toLocaleString("en-IN")}+ people already joined</span>
           <span className="text-destructive">Only {spotsLeft} spots left</span>
         </div>
         <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-background">
