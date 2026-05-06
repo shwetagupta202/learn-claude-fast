@@ -8,6 +8,7 @@ import { CTAButton } from "@/components/landing/CTAButton";
 import { MultiStepForm } from "@/components/landing/MultiStepForm";
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
+import coachImg from "@/assets/coach-shweta.jpeg";
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -92,8 +93,10 @@ function Landing() {
 
       {/* HERO with embedded lead form */}
       <header className="relative overflow-hidden bg-hero">
-        <div className="absolute inset-0 grid-bg opacity-60" />
-        <div className="absolute -top-40 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-primary/15 blur-3xl" />
+        <div className="absolute inset-0 ai-network opacity-70" />
+        <div className="absolute inset-0 grid-bg opacity-40" />
+        <div className="absolute -top-40 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full ai-orb" />
+        <div className="absolute top-1/3 -right-20 h-[300px] w-[300px] rounded-full bg-primary/15 blur-3xl" />
         <div className="relative mx-auto max-w-6xl px-5 pt-10 pb-14 sm:pt-16 sm:pb-20">
           <div id="reserve" className="grid gap-10 lg:grid-cols-2 lg:gap-14 items-center">
             <div className="text-center lg:text-left">
@@ -102,7 +105,7 @@ function Landing() {
               </span>
               <h1 className="mt-5 font-serif text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05]">
                 Learn AI Like a Pro in Just{" "}
-                <span className="text-accent-glow">3 Hours</span>
+                <span className="text-accent-glow">2 Hours</span>
               </h1>
               <p className="mt-3 text-xl sm:text-2xl font-semibold text-foreground/80">
                 For just <span className="text-primary">₹50</span> — even if you're a complete beginner.
@@ -112,9 +115,27 @@ function Landing() {
                 taught live by industry experts.
               </p>
 
+              {/* Coach card */}
+              <div className="mt-7 flex items-center gap-4 rounded-2xl border border-primary/30 bg-card/80 backdrop-blur p-3 sm:p-4 shadow-lg max-w-md mx-auto lg:mx-0">
+                <img
+                  src={coachImg}
+                  alt="Coach Shweta Gupta — Best AI Agent Female Coach in India"
+                  className="h-16 w-16 sm:h-20 sm:w-20 rounded-full object-cover ring-2 ring-primary/40"
+                  loading="eager"
+                />
+                <div className="text-left">
+                  <div className="text-xs uppercase tracking-wider text-muted-foreground">Taught Live by</div>
+                  <div className="font-bold text-base sm:text-lg">Coach Shweta Gupta</div>
+                  <div className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-2.5 py-1 text-[11px] sm:text-xs font-semibold text-primary">
+                    <Star className="h-3 w-3 fill-current" />
+                    Google Ranked · Best AI Agent Female Coach in India
+                  </div>
+                </div>
+              </div>
+
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {[
-                  { icon: Users, t: "2,00,000+", d: "Learners trained" },
+                  { icon: Users, t: "2,000+", d: "Learners trained" },
                   { icon: Star, t: "4.8 / 5", d: "Avg. rating" },
                   { icon: Rocket, t: "No coding", d: "Required at all" },
                 ].map((b) => (
@@ -196,7 +217,7 @@ function Landing() {
       {/* SOCIAL PROOF */}
       <section className="px-5 py-20 sm:py-24 bg-card/40">
         <div className="mx-auto max-w-6xl">
-          <SectionTitle eyebrow="Loved by 2,00,000+" title="Real results from real learners" />
+          <SectionTitle eyebrow="Loved by 2,000+" title="Real results from real learners" />
           <div className="mt-12 grid gap-5 md:grid-cols-3">
             {testimonials.map((t) => (
               <div key={t.n} className="rounded-2xl border border-border bg-card p-7 shadow-lg">
