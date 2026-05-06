@@ -324,10 +324,10 @@ function Landing() {
             One workshop. 3 hours. A skill that pays you back forever.
           </p>
           <div className="mt-10 flex justify-center">
-            <CTAButton>Join Free Workshop Now</CTAButton>
+            <CTAButton>Join Workshop for ₹50</CTAButton>
           </div>
           <p className="mt-4 inline-flex items-center gap-2 text-sm text-muted-foreground">
-            <ShieldCheck className="h-4 w-4 text-primary" /> 100% Free · No spam · Secure
+            <ShieldCheck className="h-4 w-4 text-primary" /> Just ₹50 · No spam · Secure payment
           </p>
         </div>
       </section>
