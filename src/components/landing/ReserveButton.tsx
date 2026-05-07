@@ -153,6 +153,13 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
       </div>
       <div className="text-[10px] font-semibold text-[#c96f3f]">SAVE 97% — TODAY ONLY</div>
 
+      {/* Webinar Details */}
+      <div className="mt-3 flex items-center justify-center gap-3 rounded-lg border border-primary/25 bg-primary/5 px-3 py-2 text-xs sm:text-sm font-semibold text-foreground">
+        <span className="inline-flex items-center gap-1">📅 <span>12 May</span></span>
+        <span className="text-primary/40">•</span>
+        <span className="inline-flex items-center gap-1">🕗 <span>8 PM IST</span></span>
+      </div>
+
       {/* Timer */}
       <div className="mt-3">
         <TimerDisplay remaining={remaining} expired={expired} />
