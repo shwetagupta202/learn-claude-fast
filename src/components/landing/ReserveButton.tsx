@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, Lock, Zap, Users, Flame } from "lucide-react";
 
-const PAYMENT_URL = "https://learn.coachshwetagupta.com/web/checkout/69fada87a74de9b6bef0bf77";
+const PAYMENT_URL = "https://learn.coachshwetagupta.com/web/checkout/69fd9742118ce03dbe0a5d48";
 const TIMER_KEY = "reserve_timer_end";
 const TIMER_DURATION_MS = 15 * 60 * 1000; // 15 minutes
 

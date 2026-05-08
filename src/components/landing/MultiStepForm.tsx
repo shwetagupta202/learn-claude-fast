@@ -7,7 +7,7 @@ const schema = z.object({
   phone: z.string().trim().regex(/^[0-9+\-\s()]{7,20}$/, "Enter a valid phone number"),
 });
 
-const PAYMENT_URL = "https://learn.coachshwetagupta.com/web/checkout/69fada87a74de9b6bef0bf77";
+const PAYMENT_URL = "https://learn.coachshwetagupta.com/web/checkout/69fd9742118ce03dbe0a5d48";
 
 export function MultiStepForm() {
   const [data, setData] = useState({ name: "", phone: "" });
