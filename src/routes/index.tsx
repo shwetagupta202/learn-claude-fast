@@ -15,10 +15,10 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "Claude 101 Workshop — Learn AI Like a Pro in 2 Hours (FREE Only)" },
-      { name: "description", content: "2-hour live workshop on Claude AI for marketers, founders & beginners. Build real workflows, automate work, save 10+ hours/week. Just FREE." },
+      { title: "Claude 101 Workshop — Learn AI Like a Pro in 2 Hours (Free)" },
+      { name: "description", content: "2-hour live workshop on Claude AI for marketers, founders & beginners. Build real workflows, automate work, save 10+ hours/week. Free." },
       { property: "og:title", content: "Claude 101 Workshop — Learn AI Like a Pro in 2 Hours" },
-      { property: "og:description", content: "Build real AI workflows for marketing, automation & productivity. Just FREE — limited seats." },
+      { property: "og:description", content: "Build real AI workflows for marketing, automation & productivity. Free — limited seats." },
       { property: "og:type", content: "website" },
     ],
   }),
@@ -242,7 +242,7 @@ function Landing() {
       {/* VALUE STACK */}
       <section className="px-5 py-20 sm:py-24">
         <div className="mx-auto max-w-3xl">
-          <SectionTitle eyebrow="The Offer" title="Here's everything you get — for just FREE" />
+          <SectionTitle eyebrow="The Offer" title="Here's everything you get — for free" />
           <div className="mt-12 rounded-3xl border-2 border-primary/40 bg-card p-6 sm:p-10 shadow-2xl">
             <ul className="space-y-4">
               {stack.map((s) => (
@@ -261,7 +261,7 @@ function Landing() {
             </div>
             <div className="mt-3 flex items-center justify-between rounded-2xl bg-accent-gradient px-5 py-5 text-primary-foreground">
               <span className="text-lg font-black">Today's Price</span>
-              <span className="text-3xl font-black">FREE only</span>
+              <span className="text-3xl font-black">FREE</span>
             </div>
             <div className="mt-8 flex justify-center">
               <CTAButton>Claim My Seat for FREE</CTAButton>
@@ -348,7 +348,7 @@ function Landing() {
             <CTAButton>Join Workshop for FREE</CTAButton>
           </div>
           <p className="mt-4 inline-flex items-center gap-2 text-sm text-muted-foreground">
-            <ShieldCheck className="h-4 w-4 text-primary" /> Just FREE · No spam · Secure payment
+            <ShieldCheck className="h-4 w-4 text-primary" /> Free · No spam · Secure payment
           </p>
         </div>
       </section>

@@ -216,7 +216,7 @@ export function StickyReserveBar() {
         )}
         <div className="hidden sm:flex flex-col leading-tight">
           <span className="text-[11px] text-muted-foreground line-through">₹1999</span>
-          <span className="text-base font-black text-[#c96f3f]">FREE only</span>
+          <span className="text-base font-black text-[#c96f3f]">FREE</span>
         </div>
         <button
           onClick={go}
