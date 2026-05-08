@@ -39,7 +39,7 @@ export function MultiStepForm() {
 
   return (
     <div className="rounded-2xl bg-card p-6 sm:p-8 border border-border shadow-2xl">
-      <h3 className="text-xl sm:text-2xl font-bold">Reserve your seat — ₹50</h3>
+      <h3 className="text-xl sm:text-2xl font-bold">Reserve your seat — FREE</h3>
       <p className="mt-1 text-sm text-muted-foreground">Limited seats · Instant access after payment</p>
 
       <div className="mt-6 space-y-4">
@@ -67,7 +67,7 @@ export function MultiStepForm() {
           disabled={loading}
           className="group flex w-full items-center justify-center gap-2 rounded-xl bg-accent-gradient px-6 py-4 font-bold text-primary-foreground btn-glow transition hover:scale-[1.01] active:scale-[0.99] disabled:opacity-70"
         >
-          {loading ? "Redirecting to payment…" : "Reserve My Spot — ₹50"}
+          {loading ? "Redirecting to payment…" : "Reserve My Spot — FREE"}
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </button>
 

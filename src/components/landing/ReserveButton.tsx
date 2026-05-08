@@ -129,7 +129,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
         className="btn-3d group flex w-full items-center justify-center gap-2 rounded-full px-6 py-4 font-extrabold disabled:opacity-50"
       >
         <span className="inline-flex items-center gap-2">
-          Reserve My Spot — ₹50
+          Reserve My Spot — FREE
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </span>
       </button>
@@ -149,13 +149,13 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
       {/* Price */}
       <div className="mt-2 flex items-baseline justify-center gap-2">
         <span className="text-base font-medium text-muted-foreground line-through">₹1999</span>
-        <span className="text-4xl font-black text-[#c96f3f] drop-shadow-[0_0_20px_rgba(201,111,63,0.35)]">₹50</span>
+        <span className="text-4xl font-black text-[#c96f3f] drop-shadow-[0_0_20px_rgba(201,111,63,0.35)]">FREE</span>
       </div>
-      <div className="text-[10px] font-semibold text-[#c96f3f]">SAVE 97% — TODAY ONLY</div>
+      <div className="text-[10px] font-semibold text-[#c96f3f]">100% FREE — TODAY ONLY</div>
 
       {/* Webinar Details */}
       <div className="mt-3 flex items-center justify-center gap-3 rounded-lg border border-primary/25 bg-primary/5 px-3 py-2 text-xs sm:text-sm font-semibold text-foreground">
-        <span className="inline-flex items-center gap-1">📅 <span>12 May</span></span>
+        <span className="inline-flex items-center gap-1">📅 <span>15 May</span></span>
         <span className="text-primary/40">•</span>
         <span className="inline-flex items-center gap-1">🕗 <span>8 PM IST</span></span>
       </div>
@@ -172,7 +172,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
         className="btn-3d group mt-3 flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 text-base font-extrabold disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <span className="inline-flex items-center gap-2">
-          Reserve My Spot — ₹50
+          Reserve My Spot — FREE
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </span>
       </button>
@@ -216,7 +216,7 @@ export function StickyReserveBar() {
         )}
         <div className="hidden sm:flex flex-col leading-tight">
           <span className="text-[11px] text-muted-foreground line-through">₹1999</span>
-          <span className="text-base font-black text-[#c96f3f]">₹50 only</span>
+          <span className="text-base font-black text-[#c96f3f]">FREE</span>
         </div>
         <button
           onClick={go}
@@ -224,7 +224,7 @@ export function StickyReserveBar() {
           className="btn-3d ml-auto flex items-center justify-center gap-1.5 rounded-full px-4 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-extrabold disabled:opacity-50"
         >
           <span className="inline-flex items-center gap-1.5">
-            Reserve My Spot — ₹50
+            Reserve My Spot — FREE
             <ArrowRight className="h-4 w-4" />
           </span>
         </button>

@@ -15,10 +15,10 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "Claude 101 Workshop — Learn AI Like a Pro in 2 Hours (₹50 Only)" },
-      { name: "description", content: "2-hour live workshop on Claude AI for marketers, founders & beginners. Build real workflows, automate work, save 10+ hours/week. Just ₹50." },
+      { title: "Claude 101 Workshop — Learn AI Like a Pro in 2 Hours (Free)" },
+      { name: "description", content: "2-hour live workshop on Claude AI for marketers, founders & beginners. Build real workflows, automate work, save 10+ hours/week. Free." },
       { property: "og:title", content: "Claude 101 Workshop — Learn AI Like a Pro in 2 Hours" },
-      { property: "og:description", content: "Build real AI workflows for marketing, automation & productivity. Just ₹50 — limited seats." },
+      { property: "og:description", content: "Build real AI workflows for marketing, automation & productivity. Free — limited seats." },
       { property: "og:type", content: "website" },
     ],
   }),
@@ -114,7 +114,7 @@ function Landing() {
                 <span className="text-accent-glow">2 Hours</span>
               </h1>
               <p className="mt-3 text-xl sm:text-2xl font-semibold text-foreground/80">
-                For just <span className="text-primary">₹50</span> — even if you're a complete beginner.
+                For just <span className="text-primary">FREE</span> — even if you're a complete beginner.
               </p>
               <p className="mx-auto lg:mx-0 mt-5 max-w-xl text-base sm:text-lg text-muted-foreground">
                 Build real workflows for marketing, automation & productivity using Claude AI —
@@ -242,7 +242,7 @@ function Landing() {
       {/* VALUE STACK */}
       <section className="px-5 py-20 sm:py-24">
         <div className="mx-auto max-w-3xl">
-          <SectionTitle eyebrow="The Offer" title="Here's everything you get — for just ₹50" />
+          <SectionTitle eyebrow="The Offer" title="Here's everything you get — for free" />
           <div className="mt-12 rounded-3xl border-2 border-primary/40 bg-card p-6 sm:p-10 shadow-2xl">
             <ul className="space-y-4">
               {stack.map((s) => (
@@ -261,10 +261,10 @@ function Landing() {
             </div>
             <div className="mt-3 flex items-center justify-between rounded-2xl bg-accent-gradient px-5 py-5 text-primary-foreground">
               <span className="text-lg font-black">Today's Price</span>
-              <span className="text-3xl font-black">₹50 only</span>
+              <span className="text-3xl font-black">FREE</span>
             </div>
             <div className="mt-8 flex justify-center">
-              <CTAButton>Claim My Seat for ₹50</CTAButton>
+              <CTAButton>Claim My Seat for FREE</CTAButton>
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@ function Landing() {
           <p className="mt-2 text-sm font-semibold text-muted-foreground">🔥 {joined}+ joined • {spotsLeft} of 50 seats remaining</p>
           <p className="mt-3 text-muted-foreground">Doors close when the timer hits zero.</p>
           <div className="mt-10"><Countdown /></div>
-          <div className="mt-10 flex justify-center"><CTAButton>Reserve My Spot — ₹50</CTAButton></div>
+          <div className="mt-10 flex justify-center"><CTAButton>Reserve My Spot — FREE</CTAButton></div>
         </div>
       </section>
 
@@ -308,7 +308,7 @@ function Landing() {
       <section className="px-5 py-20 sm:py-24 bg-hero">
         <div className="mx-auto max-w-md">
           <div className="text-center mb-8">
-            <h2 className="text-3xl sm:text-4xl font-black">Save your seat for ₹50</h2>
+            <h2 className="text-3xl sm:text-4xl font-black">Save your seat for FREE</h2>
             <p className="mt-2 text-muted-foreground">Takes 20 seconds. Instant confirmation.</p>
           </div>
           <ReserveButton />
@@ -345,10 +345,10 @@ function Landing() {
             One workshop. 2 hours. A skill that pays you back forever.
           </p>
           <div className="mt-10 flex justify-center">
-            <CTAButton>Join Workshop for ₹50</CTAButton>
+            <CTAButton>Join Workshop for FREE</CTAButton>
           </div>
           <p className="mt-4 inline-flex items-center gap-2 text-sm text-muted-foreground">
-            <ShieldCheck className="h-4 w-4 text-primary" /> Just ₹50 · No spam · Secure payment
+            <ShieldCheck className="h-4 w-4 text-primary" /> Free · No spam · Secure payment
           </p>
         </div>
       </section>
