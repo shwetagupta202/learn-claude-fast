@@ -151,7 +151,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
         <span className="text-base font-medium text-muted-foreground line-through">₹1999</span>
         <span className="text-4xl font-black text-[#c96f3f] drop-shadow-[0_0_20px_rgba(201,111,63,0.35)]">FREE</span>
       </div>
-      <div className="text-[10px] font-semibold text-[#c96f3f]">SAVE 97% — TODAY ONLY</div>
+      <div className="text-[10px] font-semibold text-[#c96f3f]">100% FREE — TODAY ONLY</div>
 
       {/* Webinar Details */}
       <div className="mt-3 flex items-center justify-center gap-3 rounded-lg border border-primary/25 bg-primary/5 px-3 py-2 text-xs sm:text-sm font-semibold text-foreground">
