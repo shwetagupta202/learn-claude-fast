@@ -2,7 +2,7 @@ import { Phone, LifeBuoy, MessageCircle } from "lucide-react";
 
 export function SiteFooter() {
   const waHref =
-    "https://wa.me/917738633354?text=I%20have%20paid%20for%20Claude%20but%20not%20able%20to%20join%20the%20group";
+    "https://wa.me/917738633354?text=I%20have%20registered%20for%20the%20UAE%20AI%20%26%20Automation%20Masterclass%20but%20need%20help%20joining%20the%20group";
 
   return (
     <footer className="border-t border-border bg-card/40">
