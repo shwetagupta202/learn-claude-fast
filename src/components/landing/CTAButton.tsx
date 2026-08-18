@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+const PAYMENT_URL = "https://learn.coachshwetagupta.com/web/checkout/69fd9742118ce03dbe0a5d48";
+
 export function CTAButton({
   children,
   onClick,
@@ -14,7 +16,7 @@ export function CTAButton({
 }) {
   return (
     <button
-      onClick={onClick ?? (() => document.getElementById("reserve")?.scrollIntoView({ behavior: "smooth" }))}
+      onClick={onClick ?? (() => { window.location.href = PAYMENT_URL; })}
       className={cn(
         "btn-3d group inline-flex items-center justify-center gap-2 rounded-full font-extrabold tracking-wide",
         size === "lg" ? "px-9 py-4 text-base sm:text-lg" : "px-6 py-3 text-sm",
