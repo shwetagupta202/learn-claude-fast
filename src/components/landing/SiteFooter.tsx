@@ -53,7 +53,7 @@ export function SiteFooter() {
           </p>
         </div>
         <p className="mt-8 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Claude 101 Workshop. All rights reserved.
+          © {new Date().getFullYear()} AI & Automation Masterclass for UAE Professionals. All rights reserved.
         </p>
       </div>
     </footer>
