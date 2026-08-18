@@ -12,8 +12,8 @@ export function SiteFooter() {
             <LifeBuoy className="h-3.5 w-3.5" /> Need Help?
           </div>
           <p className="mt-4 text-base sm:text-lg text-foreground/90 leading-relaxed">
-            If you have completed your payment but are unable to join the WhatsApp group
-            for the <span className="font-semibold">Claude AI Workshop</span>, please contact
+            If you have completed your registration but are unable to join the WhatsApp group
+            for the <span className="font-semibold">AI & Automation Masterclass for UAE Professionals</span>, please contact
             us on WhatsApp for quick assistance.
           </p>
 
