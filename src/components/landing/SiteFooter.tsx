@@ -2,7 +2,7 @@ import { Phone, LifeBuoy, MessageCircle } from "lucide-react";
 
 export function SiteFooter() {
   const waHref =
-    "https://wa.me/917738633354?text=I%20have%20paid%20for%20Claude%20but%20not%20able%20to%20join%20the%20group";
+    "https://wa.me/917738633354?text=I%20have%20registered%20for%20the%20UAE%20AI%20%26%20Automation%20Masterclass%20but%20need%20help%20joining%20the%20group";
 
   return (
     <footer className="border-t border-border bg-card/40">
@@ -12,8 +12,8 @@ export function SiteFooter() {
             <LifeBuoy className="h-3.5 w-3.5" /> Need Help?
           </div>
           <p className="mt-4 text-base sm:text-lg text-foreground/90 leading-relaxed">
-            If you have completed your payment but are unable to join the WhatsApp group
-            for the <span className="font-semibold">Claude AI Workshop</span>, please contact
+            If you have completed your registration but are unable to join the WhatsApp group
+            for the <span className="font-semibold">AI & Automation Masterclass for UAE Professionals</span>, please contact
             us on WhatsApp for quick assistance.
           </p>
 
@@ -53,7 +53,7 @@ export function SiteFooter() {
           </p>
         </div>
         <p className="mt-8 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Claude 101 Workshop. All rights reserved.
+          © {new Date().getFullYear()} AI & Automation Masterclass for UAE Professionals. All rights reserved.
         </p>
       </div>
     </footer>

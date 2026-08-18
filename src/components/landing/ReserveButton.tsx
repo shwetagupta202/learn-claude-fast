@@ -129,7 +129,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
         className="btn-3d group flex w-full items-center justify-center gap-2 rounded-full px-6 py-4 font-extrabold disabled:opacity-50"
       >
         <span className="inline-flex items-center gap-2">
-          Reserve My Spot — FREE
+          RESERVE MY FREE SEAT
           <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
         </span>
       </button>
@@ -142,22 +142,22 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
   return (
     <div className="rounded-2xl bg-card p-4 sm:p-5 border-2 border-primary/30 shadow-2xl text-center">
       <span className="inline-flex items-center gap-1.5 rounded-full bg-orange-500/15 px-2.5 py-0.5 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-orange-500">
-        <Flame className="h-3 w-3" /> Limited Time AI Workshop Access
+        <Flame className="h-3 w-3" /> Limited Time UAE Webinar Access
       </span>
-      <h3 className="mt-2 font-serif text-xl sm:text-2xl font-black">🚀 Reserve Your Seat</h3>
+      <h3 className="mt-2 font-serif text-xl sm:text-2xl font-black">🚀 Reserve Your Free Seat</h3>
 
       {/* Price */}
       <div className="mt-2 flex items-baseline justify-center gap-2">
-        <span className="text-base font-medium text-muted-foreground line-through">₹1999</span>
-        <span className="text-4xl font-black text-[#c96f3f] drop-shadow-[0_0_20px_rgba(201,111,63,0.35)]">FREE</span>
+        <span className="text-base font-medium text-muted-foreground line-through">AED 9</span>
+        <span className="text-4xl font-black text-[#c96f3f] drop-shadow-[0_0_20px_rgba(201,111,63,0.35)]">AED 0</span>
       </div>
-      <div className="text-[10px] font-semibold text-[#c96f3f]">100% FREE — TODAY ONLY</div>
+      <div className="text-[10px] font-semibold text-[#c96f3f]">100% FREE — UAE WEBINAR</div>
 
       {/* Webinar Details */}
       <div className="mt-3 flex items-center justify-center gap-3 rounded-lg border border-primary/25 bg-primary/5 px-3 py-2 text-xs sm:text-sm font-semibold text-foreground">
         <span className="inline-flex items-center gap-1">📅 <span>15 May</span></span>
         <span className="text-primary/40">•</span>
-        <span className="inline-flex items-center gap-1">🕗 <span>8 PM IST</span></span>
+        <span className="inline-flex items-center gap-1">🕗 <span>8 PM GST</span></span>
       </div>
 
       {/* Timer */}
@@ -172,7 +172,7 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
         className="btn-3d group mt-3 flex w-full items-center justify-center gap-2 rounded-xl px-5 py-4 text-base font-extrabold disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <span className="inline-flex items-center gap-2">
-          Reserve My Spot — FREE
+          RESERVE MY FREE SEAT
           <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </span>
       </button>
@@ -215,8 +215,8 @@ export function StickyReserveBar() {
           <div className="text-xs font-semibold text-destructive">Offer expired</div>
         )}
         <div className="hidden sm:flex flex-col leading-tight">
-          <span className="text-[11px] text-muted-foreground line-through">₹1999</span>
-          <span className="text-base font-black text-[#c96f3f]">FREE</span>
+          <span className="text-[11px] text-muted-foreground line-through">AED 9</span>
+          <span className="text-base font-black text-[#c96f3f]">AED 0</span>
         </div>
         <button
           onClick={go}
@@ -224,7 +224,7 @@ export function StickyReserveBar() {
           className="btn-3d ml-auto flex items-center justify-center gap-1.5 rounded-full px-4 py-3 sm:px-6 sm:py-3.5 text-sm sm:text-base font-extrabold disabled:opacity-50"
         >
           <span className="inline-flex items-center gap-1.5">
-            Reserve My Spot — FREE
+            RESERVE MY FREE SEAT
             <ArrowRight className="h-4 w-4" />
           </span>
         </button>

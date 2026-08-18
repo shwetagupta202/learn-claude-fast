@@ -28,16 +28,16 @@ export function ExitIntent() {
         </button>
         <div className="text-center">
           <span className="inline-block rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold text-primary">WAIT! Don't leave</span>
-          <h3 className="mt-3 text-2xl font-bold">Grab your free seat before it's gone</h3>
+          <h3 className="mt-3 text-2xl font-bold">Grab your free UAE webinar seat</h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            You're 1 click away from learning AI in 2 hours — at just FREE.
+            You're 1 click away from mastering AI, ChatGPT & n8n automation for your business — 100% free.
           </p>
           <p className="mt-3 text-xs font-semibold text-destructive">
             🔥 {joined}+ joined • Only {spotsLeft} seats left
           </p>
           <div className="mt-6 flex justify-center">
-            <CTAButton onClick={() => { setOpen(false); document.getElementById("reserve")?.scrollIntoView({ behavior: "smooth" }); }}>
-              Claim My Spot — FREE
+            <CTAButton onClick={() => { setOpen(false); }}>
+              RESERVE MY FREE SEAT
             </CTAButton>
           </div>
         </div>
