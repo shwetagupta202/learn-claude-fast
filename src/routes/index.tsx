@@ -7,6 +7,7 @@ import {
   Wrench, Plane, HardHat, Laptop, Globe, MessageSquare, Bot, Network,
   BarChart3, FileText, Target, Lightbulb, Layers, Cpu, Repeat, Send,
   CalendarClock, MapPin, Building, TrendingUpIcon, Megaphone, CheckCircle2,
+  Settings,
 } from "lucide-react";
 import { CTAButton } from "@/components/landing/CTAButton";
 import { ReserveButton, StickyReserveBar, useDynamicSocialProof } from "@/components/landing/ReserveButton";
