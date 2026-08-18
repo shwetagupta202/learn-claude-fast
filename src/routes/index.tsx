@@ -306,7 +306,7 @@ function Landing() {
       {/* WHAT MAKES DIFFERENT */}
       <section className="px-5 py-20 sm:py-24">
         <div className="mx-auto max-w-6xl">
-          <SectionTitle eyebrow="What Makes This Different" title="What Makes This Webinar Different?" sub="Not another "AI is the future" talk. This is a practical, step-by-step business automation workshop." />
+          <SectionTitle eyebrow="What Makes This Different" title="What Makes This Webinar Different?" sub="Not another 'AI is the future' talk. This is a practical, step-by-step business automation workshop." />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {differentiators.map((d) => (
               <div key={d.t} className="rounded-2xl border border-border bg-card p-7">
