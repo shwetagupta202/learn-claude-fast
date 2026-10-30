@@ -14,7 +14,7 @@ import { ReserveButton, StickyReserveBar, useDynamicSocialProof } from "@/compon
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
 import { SiteFooter } from "@/components/landing/SiteFooter";
-import coachImg from "@/assets/coach-shweta.png.asset.json";
+import coachImg from "@/assets/coach-shweta-passport.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Landing,
