@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { CheckCircle2, MessageCircle, Sparkles, ShieldCheck, Calendar, Clock, Users, Gift } from "lucide-react";
 import { SiteFooter } from "@/components/landing/SiteFooter";
+import { WEBINAR_DATE, WEBINAR_TIME, WEBINAR_DATETIME } from "@/lib/webinar";
 
 const WHATSAPP_URL = "https://chat.whatsapp.com/CA8jNwWwsGcKfdQ9dj7TMC";
 
@@ -58,13 +59,13 @@ function ThankYou() {
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
                   <Calendar className="h-4 w-4" /> Date
                 </div>
-                <div className="mt-1 text-lg font-bold">15 Nov</div>
+                <div className="mt-1 text-lg font-bold">{WEBINAR_DATE}</div>
               </div>
               <div className="rounded-xl border border-primary/25 bg-primary/5 p-4">
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
                   <Clock className="h-4 w-4" /> Time
                 </div>
-                <div className="mt-1 text-lg font-bold">9:30 GST</div>
+                <div className="mt-1 text-lg font-bold">{WEBINAR_TIME}</div>
               </div>
             </div>
 
@@ -115,7 +116,7 @@ function ThankYou() {
               </div>
               <div className="rounded-xl border border-border bg-secondary/40 p-4">
                 <Calendar className="h-5 w-5 text-primary" />
-                <div className="mt-2 text-sm font-semibold">Mark 15 Nov, 9:30</div>
+                <div className="mt-2 text-sm font-semibold">Mark {WEBINAR_DATETIME}</div>
                 <div className="text-xs text-muted-foreground mt-0.5">Set a reminder now</div>
               </div>
               <div className="rounded-xl border border-border bg-secondary/40 p-4">
