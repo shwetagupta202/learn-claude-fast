@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, Lock, Zap, Users, Flame } from "lucide-react";
+import { WEBINAR_DATE, WEBINAR_TIME } from "@/lib/webinar";
 
 const PAYMENT_URL = "https://learn.coachshwetagupta.com/web/checkout/69fd9742118ce03dbe0a5d48";
 const TIMER_KEY = "reserve_timer_end";
@@ -155,9 +156,9 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
 
       {/* Webinar Details */}
       <div className="mt-3 flex items-center justify-center gap-3 rounded-lg border border-primary/25 bg-primary/5 px-3 py-2 text-xs sm:text-sm font-semibold text-foreground">
-        <span className="inline-flex items-center gap-1">📅 <span>15 Nov</span></span>
+        <span className="inline-flex items-center gap-1">📅 <span>{WEBINAR_DATE}</span></span>
         <span className="text-primary/40">•</span>
-        <span className="inline-flex items-center gap-1">🕗 <span>9:30 GST</span></span>
+        <span className="inline-flex items-center gap-1">🕗 <span>{WEBINAR_TIME}</span></span>
       </div>
 
       {/* Timer */}
