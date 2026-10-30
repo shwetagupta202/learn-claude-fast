@@ -14,7 +14,7 @@ import { ReserveButton, StickyReserveBar, useDynamicSocialProof } from "@/compon
 import { Countdown } from "@/components/landing/Countdown";
 import { ExitIntent } from "@/components/landing/ExitIntent";
 import { SiteFooter } from "@/components/landing/SiteFooter";
-import coachImg from "@/assets/coach-shweta.jpeg";
+import coachImg from "@/assets/coach-shweta.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -137,7 +137,7 @@ function Landing() {
   ];
 
   const faqs = [
-    { q: "Is this webinar really free?", a: "Yes, 100% free. The regular value is AED 9, but this special UAE session is available at AED 0 for a limited time." },
+    { q: "Is this webinar really free?", a: "Yes, 100% free. The regular value is AED 99, but this special UAE session is available at AED 0 for a limited time." },
     { q: "Do I need technical or coding skills?", a: "Not at all. This webinar is designed for business owners, professionals, and beginners who want to use AI without becoming developers." },
     { q: "What tools will be covered?", a: "We cover practical tools like ChatGPT, Claude, and n8n automation — all explained in simple, easy-to-follow steps." },
     { q: "Who is this webinar for?", a: "Business owners, working professionals, digital agency owners, marketers, sales teams, and anyone in the UAE who wants to leverage AI and automation." },
@@ -175,7 +175,7 @@ function Landing() {
               {/* Special offer badge */}
               <div className="mt-6 inline-flex flex-col sm:flex-row items-center gap-3 rounded-2xl border border-primary/30 bg-card/80 backdrop-blur px-5 py-3 shadow-lg">
                 <span className="text-sm font-semibold text-muted-foreground">Special UAE Webinar Offer</span>
-                <span className="text-lg text-muted-foreground line-through">AED 9</span>
+                <span className="text-lg text-muted-foreground line-through">AED 99</span>
                 <span className="text-2xl font-black text-[#c96f3f]">AED 0 — FREE</span>
               </div>
 
@@ -406,7 +406,7 @@ function Landing() {
             UAE AI & Automation Webinar
           </h2>
           <div className="mt-4 flex items-center justify-center gap-3 text-2xl sm:text-3xl font-black">
-            <span className="text-muted-foreground line-through">AED 9</span>
+            <span className="text-muted-foreground line-through">AED 99</span>
             <span className="text-[#c96f3f]">AED 0 — FREE</span>
           </div>
           <p className="mt-4 text-muted-foreground">Limited-time access to this practical AI & Automation webinar.</p>
@@ -464,7 +464,7 @@ function Landing() {
           </p>
           <div className="mt-10 flex flex-col items-center gap-4">
             <div className="text-2xl sm:text-3xl font-black">
-              <span className="text-muted-foreground line-through">AED 9</span>
+              <span className="text-muted-foreground line-through">AED 99</span>
               <span className="ml-2 text-[#c96f3f]">AED 0 — FREE</span>
             </div>
             <CTAButton>RESERVE MY FREE SEAT</CTAButton>

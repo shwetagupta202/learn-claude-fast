@@ -148,16 +148,16 @@ export function ReserveButton({ compact = false }: { compact?: boolean }) {
 
       {/* Price */}
       <div className="mt-2 flex items-baseline justify-center gap-2">
-        <span className="text-base font-medium text-muted-foreground line-through">AED 9</span>
+        <span className="text-base font-medium text-muted-foreground line-through">AED 99</span>
         <span className="text-4xl font-black text-[#c96f3f] drop-shadow-[0_0_20px_rgba(201,111,63,0.35)]">AED 0</span>
       </div>
       <div className="text-[10px] font-semibold text-[#c96f3f]">100% FREE — UAE WEBINAR</div>
 
       {/* Webinar Details */}
       <div className="mt-3 flex items-center justify-center gap-3 rounded-lg border border-primary/25 bg-primary/5 px-3 py-2 text-xs sm:text-sm font-semibold text-foreground">
-        <span className="inline-flex items-center gap-1">📅 <span>15 May</span></span>
+        <span className="inline-flex items-center gap-1">📅 <span>15 Nov</span></span>
         <span className="text-primary/40">•</span>
-        <span className="inline-flex items-center gap-1">🕗 <span>8 PM GST</span></span>
+        <span className="inline-flex items-center gap-1">🕗 <span>9:30 GST</span></span>
       </div>
 
       {/* Timer */}
@@ -215,7 +215,7 @@ export function StickyReserveBar() {
           <div className="text-xs font-semibold text-destructive">Offer expired</div>
         )}
         <div className="hidden sm:flex flex-col leading-tight">
-          <span className="text-[11px] text-muted-foreground line-through">AED 9</span>
+          <span className="text-[11px] text-muted-foreground line-through">AED 99</span>
           <span className="text-base font-black text-[#c96f3f]">AED 0</span>
         </div>
         <button
